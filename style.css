@@ -1,0 +1,98 @@
+:root {
+	/* !font */
+	--BigShoulders: "Big Shoulders Display", cursive;
+	--LexendDeca: "Lexend Deca", sans-serif;
+	/* !color's */
+	--bright-orange: hsl(31, 77%, 52%);
+	--dark-cyan: hsl(184, 100%, 22%);
+	--Very-dark-cyan: hsl(179, 100%, 13%);
+	--white-p: hsla(0, 0%, 100%, 0.75);
+	--very-lightGray: hsl(0, 0%, 95%);
+	/* !font */
+	--w400: 400;
+	--w700: 700;
+	--base-size: 15px;
+}
+html,
+body {
+	margin: 0;
+	box-sizing: border-box;
+	background-color: var(--very-lightGray);
+	font-size: var(--base-size);
+}
+
+div.main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 100vh;
+}
+
+div.flex-row {
+	padding: 41px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: start;
+	height: calc(100vh - 42%);
+	width: calc(100vw - 82%);
+}
+
+div.flex-first-col {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	gap: 29px;
+}
+
+div.flex-row > div.flex-first-col > div.text-content {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	gap: 29px;
+}
+div.flex-row > div.flex-first-col > div.text-content h1 {
+	font-family: var(--BigShoulders);
+	margin: 0;
+}
+div.flex-row > div.flex-first-col > div.text-content p {
+	font-family: var(--LexendDeca);
+	margin: 0;
+	line-height: 25px;
+	font-size: 15px;
+	color: var(--white-p);
+}
+div#SUVs > div.flex-first-col > div.text-content p {
+   font-size: 14px;
+}
+div#sedans {
+	background-color: var(--bright-orange);
+	color: var(--very-lightGray);
+}
+div#SUVs {
+	background-color: var(--dark-cyan);
+	color: var(--very-lightGray);
+    font-size: 14px;
+}
+div#Luxury {
+	background-color: var(--Very-dark-cyan);
+	color: var(--very-lightGray);
+}
+button.button {
+	border-radius: 30px;
+	border: none;
+	padding: 13px 22px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+div#sedans > button {
+	color: var(--bright-orange);
+}
+div#SUVs > button {
+	color: var(--dark-cyan);
+}
+div#Luxury > button {
+	color: var(--Very-dark-cyan);
+}
