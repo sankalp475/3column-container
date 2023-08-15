@@ -35,7 +35,7 @@ div.flex-row {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: start;
-	height: calc(100vh - 42%);
+	height: calc(100vh - 49%);
 	width: calc(100vw - 82%);
 }
 
